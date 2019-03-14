@@ -9,6 +9,8 @@ From nginx:latest as front
 
 ADD front-code-vue.conf /etc/nginx/conf.d/
 
+RUN rm -f /etc/nginx/conf.d/default.conf
+
 WORKDIR /usr/share/nginx/html/front-code-vue
 
 COPY --from=builder /data/front-code-vue/dist .

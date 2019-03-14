@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  front:
+    build: .
+    image: "issenn/front"
+    ports:
+      - "28080:80"
