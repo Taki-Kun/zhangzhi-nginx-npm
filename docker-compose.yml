@@ -5,4 +5,4 @@ services:
     build: .
     image: "issenn/front"
     ports:
-      - "28080:80"
+      - "80:80"
