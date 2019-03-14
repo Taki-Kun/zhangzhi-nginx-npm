@@ -12,5 +12,3 @@ ADD front-code-vue.conf /etc/nginx/conf.d/
 WORKDIR /usr/share/nginx/html/front-code-vue
 
 COPY --from=builder /data/front-code-vue/dist .
-
-EXPOSE 9090
